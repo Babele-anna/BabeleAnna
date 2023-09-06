@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Serviços</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Babele">
+  <meta name="keywords" content="Your keywords">
+  <meta name="author" content="LB Designer">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.1.1.js"></script>
+  <script src="js/bgstretcher.js"></script>
+  <script>
+    $(function(){
+      // Initialize Backgound Stretcher
+      $('BODY').bgStretcher({
+        images: ['images/slide-1.jpg'],
+        imageWidth: 1600,
+        imageHeight: 964,
+        resizeProportionally:true
+      });
+    });
+
+
+
+document.getElementById("comment-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Obter os valores dos campos
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var comment = document.getElementById("comment").value;
+
+  // Enviar os dados para o arquivo PHP usando AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "enviar_comentario.php", true);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      // Redirecionar após o envio
+      window.location.href = "index.html";
+    }
+  };
+  xhr.send("name=" + name + "&email=" + email + "&comment=" + comment);
+});
+</script>
+
+
+  <!--[if lt IE 8]>
+  <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+  <script src="js/html5shiv.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <![endif]-->
+
+<style>
+        .back-button {
+            float: right;
+        }
+    </style>
+
+    <style>
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+    }
+
+    .floating-buttons .toggle-button {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      background-color: transparent;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active::before {
+      content: "x";
+    }
+
+    .floating-buttons .button-container {
+      position: absolute;
+      right: 0;
+      bottom: 90px;
+      z-index: 1;
+      width: 60px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button.active ~ .button-container {
+      transform: translateY(0);
+    }
+
+    .floating-buttons .button-container a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .floating-buttons .button-container a:hover {
+      background-color: #333;
+    }
+
+    .floating-buttons .button-container a.instagram-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.instagram-button i {
+      font-size: 20px;
+      color: white;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button i {
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="extra-block"> 
+    <!--==============================row-top=================================-->
+    <div class="row-top">
+      <div class="main">
+        <ul class="list-soc">
+          <li><a href="https://www.facebook.com/babele.anna/"><img alt="facebook" src="images/soc-icon1.png"></a></li>
+          <li><a href="https://www.instagram.com/babele.anna"><img alt="instagram" src="images/soc-icon2.png"></a></li>
+	  <li><a href="#"><img alt="youtube" src="images/soc-icon3.png"></a></li>
+	  <li><a href="https://br.pinterest.com/BabeleAnna/"><img alt="pinterest" src="images/soc-icon4.png"></a></li>
+	  <li><a href="https://www.elo7.com.br/babeleanna"><img alt="elo7" src="images/soc-icon5.png"></a></li>
+        </ul>
+      </div>
+    </div>
+      
+    <!--==============================header=================================-->
+      
+    <header>
+      <div class="row-nav">
+        <div class="main">
+          <h1 class="logo"><a href="index.html"><img alt="BabeleAnna" src="images/logo.png"></a></h1>
+          <nav>
+            <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li class="current"><a href="servicos.html">Serviços</a></li>
+              <li><a href="contato.html">Contatos</a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href="saboaria.html">Conheça nossa Saboaria</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </header>
+  
+    <!--==============================content=================================-->
+    <section id="content">  
+      <div class="main-block">
+        <div class="container_12">
+        <div class="main">
+          </div>
+          <div class="wrapper">
+<h4>Depoimentos de alguns clientes</h4>
+            <section id="content">  
+  <div class="main-block">
+    <div class="container_12">
+      <div class="main">
+       	  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+<section id="content">  
+  <div class="main-block">
+    <div class="container_12">
+      <div class="main">
+        <h4>Envie seu comentário</h4>
+        <form id="comment-form" method="post" action="enviar_comentario.php">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="comment">Comentário:</label>
+          <textarea id="comment" name="comment" required></textarea>
+
+          <button type="submit">Enviar Comentário</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <div class="block"> 
+      <!--==============================footer================================-->
+      <footer>
+      <div class="main aligncenter">
+        <div class="privacy">BabeleAnna   &copy; 2023 <span>|</span> <a href="politica.html" rel="nofollow">Política de Privacidade</a> <span>|</span> <strong>Desenvolvido por LB Designer</strong> </div>
+      </div>
+    </footer>
+    </div>
+
+    <div class="floating-buttons">
+      <div class="toggle-button">+</div>
+      <div class="button-container">
+      <a href="https://wa.me/5511981980219" target="_blank" class="whatsapp-button">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/babele.anna" target="_blank" class="instagram-button">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/releases/latest/js/fontawesome.min.js" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='https://kit.fontawesome.com/b9912851aa.js?ver=1.0.0' id='fontawesome-js'></script>
+</body>
+</html>

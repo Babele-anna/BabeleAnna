@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sobre nós</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your keywords">
+  <meta name="author" content="Your name">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.1.1.js"></script>
+  <script src="js/bgstretcher.js"></script>
+  <script>
+    $(function(){
+      // Initialize Backgound Stretcher
+      $('BODY').bgStretcher({
+        images: ['images/slide-1.jpg'],
+        imageWidth: 1600,
+        imageHeight: 964,
+        resizeProportionally:true
+      });
+    });
+  </script>
+
+  <!--[if lt IE 8]>
+  <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+  <script src="js/html5shiv.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <![endif]-->
+
+<style>
+        .back-button {
+            float: right;
+        }
+    </style>
+
+
+
+  <style>
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+    }
+
+    .floating-buttons .toggle-button {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      background-color: transparent;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active::before {
+      content: "x";
+    }
+
+    .floating-buttons .button-container {
+      position: absolute;
+      right: 0;
+      bottom: 90px;
+      z-index: 1;
+      width: 60px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button.active ~ .button-container {
+      transform: translateY(0);
+    }
+
+    .floating-buttons .button-container a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .floating-buttons .button-container a:hover {
+      background-color: #333;
+    }
+
+    .floating-buttons .button-container a.instagram-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.instagram-button i {
+      font-size: 20px;
+      color: white;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button i {
+      font-size: 20px;
+      color: white;
+    }
+  
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .back-button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="extra-block"> 
+    <!--==============================row-top=================================-->
+    <div class="row-top">
+      <div class="main">
+        <ul class="list-soc">
+          <li><a href="https://www.facebook.com/babele.anna/"><img alt="facebook" src="images/soc-icon1.png"></a></li>
+          <li><a href="https://www.instagram.com/babele.anna"><img alt="instagram" src="images/soc-icon2.png"></a></li>
+	  <li><a href="#"><img alt="youtube" src="images/soc-icon3.png"></a></li>
+	  <li><a href="https://br.pinterest.com/BabeleAnna/"><img alt="pinterest" src="images/soc-icon4.png"></a></li>
+	  <li><a href="https://www.elo7.com.br/babeleanna"><img alt="elo7" src="images/soc-icon5.png"></a></li>
+        </ul>
+      </div>
+    </div>
+      
+    <!--==============================header=================================-->
+      
+    <header>
+      <div class="row-nav">
+        <div class="main">
+          <h1 class="logo"><a href="index.html"><img alt="BabeleAnna" src="images/logo.png"></a></h1>
+          <nav>
+             <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+              <li class="current"><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="contato.html">Contatos</a></li>
+	      <li><a href=""></a></li>
+	      <li><a href=""></a></li>
+	      <li><a href="saboaria.html">Conheça nossa Saboaria</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </header>
+  
+    <!--==============================content=================================-->
+    <section id="content">
+      <div class="main-block policy">
+        <div class="main">
+          <h3>Sobre nós</h3>
+          <h4>Conheça a Babele Anna Arte e Aroma: Sua jornada apaixonante</h4>
+          <p>Olá, sou Anna Oliveira, a mente criativa por trás da Babele Anna. Quero compartilhar com vocês como me envolvi nesse incrível mundo da Criatividade.<br>
+Desde pequena, herdei o dom e o amor pelos trabalhos manuais de minha avó, e essa paixão foi transmitida de geração em geração. O que torna nossa história ainda mais especial é que minha mãe também embarcou nessa jornada ao meu lado, contribuindo para a criação da Babele Anna.<br>
+Porém tudo começou com minha avó, quando ela aprendeu a cortar papel decorativo para embrulhar balas de coco, adicionando um toque de doçura às festas e encantando as mesas. Esse talento foi passado adiante, e minha mãe começou a decorar festas de aniversário em nossa família, encantando a todos por muitos anos. Foi nesse momento que me vi envolvida e completamente apaixonada por esse mundo mágico. Assim, passamos a criar decorações, convites e caixas de lembranças para eventos. No entanto, ao atendermos os pedidos de nossos clientes em busca de lembranças completas e úteis, chegamos aos aromatizadores e sabonetes.
+
+</p>
+          <h4>Males que vem para o bem!</h4>
+          <p>
+E então, a pandemia chegou repentinamente, afetando o mundo inteiro. Nosso ramo inicial foi completamente comprometido, já que todas as festas foram canceladas. Foi nesse momento de preocupação e incerteza que minha mãe sugeriu: "Por que não continuamos com a produção na área da Saboaria?"<br>
+Apesar de não termos um conhecimento aprofundado nessa área, sabíamos que lidar com a pele e a saúde era algo sério e que exigia responsabilidade. No entanto, movidas pela pura paixão, decidimos seguir em frente com a Saboaria.<br>
+Desde então, nos dedicamos a buscar cursos e aprimorar nossos conhecimentos nesse campo. Assim nasceu a Babele Anna <b>Arte e Aroma</b>.<br>
+Fomos aprimorando nossas habilidades, selecionando cuidadosamente as melhores matérias-primas e chegando aos produtos incríveis que temos hoje. Segundo nossos clientes, eles são altamente eficazes, feitos com extrema qualidade e apresentação impecável.
+</p>
+          <h4>Você deve estar se perguntando: "Por que optar por sabonetes de fabricação natural?"</h4>
+          <p>
+Bom, aqui estão as nossas respostas, revelando os benefícios surpreendentes da Saboaria Criativa:<br>
+
+<ul">
+<li> Nossos produtos são livres de conservantes sintéticos;</li>
+  <li> Eles contêm glicerina natural pura, que mantém a umidade natural da pele, deixando-a hidratada e radiante. (Nos sabonetes industriais, essa glicerina é removida e vendida como subproduto.);</li>
+  <li> Nossos produtos preservam as vitaminas naturais e antioxidantes essenciais para uma pele saudável;
+</li>
+  <li> Possuem um aroma suave e uma espuma delicada, cremosa e totalmente natural;
+</li>
+<li> São ecologicamente sustentáveis, biodegradáveis e 100% naturais;
+</li>
+<li> Não realizamos testes em animais;
+</li>
+<li> Nossas fórmulas contêm óleos vegetais, manteigas vegetais, extratos glicólicos e outros ingredientes que hidratam, acalmam e iluminam a pele, incluindo plantas aromáticas, flores e sementes.
+</li>
+</ul>
+
+      <p>
+Após enfrentarmos tantos desafios e dedicarmos nosso tempo, o maior presente que recebemos é ouvir de nossos clientes: "Seus produtos são incríveis e não consigo mais viver sem eles".
+
+A satisfação dos nossos clientes nos traz não apenas alegria, mas também mostra que as pessoas estão cada vez mais conscientes de que merecem o melhor para si mesmas, para presentear alguém especial e para o meio ambiente.
+</p>
+
+<h4>Essa é a nossa história. Amamos cada momento do que fazemos!</h4>
+<p>Nosso comprometimento e preocupação são imensos, sempre em busca de oferecer produtos que deixem nossos clientes satisfeitos, sabendo que, além de adquirirem um produto feito com carinho e amor, também receberão um momento de bem-estar.<br>
+
+Agradeço primeiramente a Deus por ter nos mostrado esse caminho que tanto amamos. E, é claro, agradeço aos nossos clientes que acreditam em nosso trabalho.
+<br>
+Com gratidão,
+<br>
+Anna Oliveira e Ana Maria Oliveira
+</p>
+
+<a href="index.html" class="back-button">Voltar à Página Principal</a>
+
+        </div>
+      </div>  
+    </section>
+  
+    <div class="block"> 
+      <!--==============================footer================================-->
+      <footer>
+      <div class="main aligncenter">
+        <div class="privacy">BabeleAnna   &copy; 2023 <span>|</span> <a href="politica.html" rel="nofollow">Política de Privacidade</a> <span>|</span> <strong>Desenvolvido por LB Designer</strong> </div>
+      </div>
+    </footer>
+    </div>
+
+    <div class="floating-buttons">
+      <div class="toggle-button">+</div>
+      <div class="button-container">
+      <a href="https://wa.me/5511981980219" target="_blank" class="whatsapp-button">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/babele.anna" target="_blank" class="instagram-button">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/releases/latest/js/fontawesome.min.js" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='https://kit.fontawesome.com/b9912851aa.js?ver=1.0.0' id='fontawesome-js'></script>
+</body>
+</html>

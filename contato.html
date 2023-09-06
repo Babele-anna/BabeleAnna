@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your keywords">
+  <meta name="author" content="Your name">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.1.1.js"></script>
+  <script src="js/bgstretcher.js"></script>
+  <script src="js/forms.js"></script>
+
+  <script>
+    $(document).ready(function() {	
+      // Initialize Backgound Stretcher
+      $('BODY').bgStretcher({
+        images: ['images/slide-1.jpg'],
+        imageWidth: 1600,
+        imageHeight: 964,
+        resizeProportionally:true
+      });	   	
+    });	
+  </script>
+
+  <!--[if lt IE 8]>
+  <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+  <script src="js/html5shiv.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <![endif]-->
+
+  <style>
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+    }
+
+    .floating-buttons .toggle-button {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      background-color: transparent;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active::before {
+      content: "x";
+    }
+
+    .floating-buttons .button-container {
+      position: absolute;
+      right: 0;
+      bottom: 90px;
+      z-index: 1;
+      width: 60px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button.active ~ .button-container {
+      transform: translateY(0);
+    }
+
+    .floating-buttons .button-container a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .floating-buttons .button-container a:hover {
+      background-color: #333;
+    }
+
+    .floating-buttons .button-container a.instagram-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.instagram-button i {
+      font-size: 20px;
+      color: white;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button i {
+      font-size: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="extra-block"> 
+    <!--==============================row-top=================================-->
+    <div class="row-top">
+      <div class="main">
+        <ul class="list-soc">
+          <li><a href="https://www.facebook.com/babele.anna/"><img alt="facebook" src="images/soc-icon1.png"></a></li>
+          <li><a href="https://www.instagram.com/babele.anna"><img alt="instagram" src="images/soc-icon2.png"></a></li>
+	  <li><a href="#"><img alt="youtube" src="images/soc-icon3.png"></a></li>
+	  <li><a href="https://br.pinterest.com/BabeleAnna/"><img alt="pinterest" src="images/soc-icon4.png"></a></li>
+	  <li><a href="https://www.elo7.com.br/babeleanna"><img alt="elo7" src="images/soc-icon5.png"></a></li>
+        </ul>
+      </div>
+    </div>
+      
+    <!--==============================header=================================-->
+      
+    <header>
+      <div class="row-nav">
+        <div class="main">
+          <h1 class="logo"><a href="index.html"><img alt="BabeleAnna" src="images/logo.png"></a></h1>
+          <nav>
+            <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li class="current"><a href="contato.html">Contatos</a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href="saboaria.html">Conheça nossa Saboaria</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </header>
+  
+    <!--==============================content=================================-->
+    <section id="content">  
+      <div class="main-block">
+        <div class="container_12">
+          <div class="wrapper border-vert">
+            <article class="grid_5">
+              <h3>Endereço</h3>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14637.130640493979!2d-46.5889882!3d-23.4863263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef593c0db9461%3A0xb908ecb85513518e!2sBabele%20Anna!5e0!3m2!1spt-BR!2sus!4v1689310885909!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+             
+              <dl class="address">
+                <dt>Babele Anna - Arte e Aroma<br>
+                R. Açotéia, 98 - Vila Medeiros<br>
+                São Paulo - SP, 02207-020</dt>
+                <dd><span>Email:</span>contato@babeleanna.com.br</dd>  
+                <dd><span>Telefone:</span> +55 11 98198-0219</dd>
+                <dd><span>Whatsapp:</span> +55 11 98198-0219</dd>
+   
+              </dl>
+            </article>
+            <article class="grid_5 prefix_2">
+              <h3>Formulário</h3>
+             
+              <form id="contact-form">
+                <div class="success">Formulário de Contato enviado! <strong>Em breve entraremos em contato.</strong></div>
+                <fieldset>
+                  <div>
+                    <label class="name">
+                      <input type="text" value="Nome:">
+                      <br>
+                      <span class="error">*Este não é um nome válido.</span> <span class="empty">*Este campo é obrigatório.</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="email">
+                      <input type="email" value="E-mail:">
+                      <br>
+                      <span class="error">*Este não é um endereço de e-mail válido.</span> <span class="empty">*Este campo é obrigatório.</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="phone">
+                      <input type="tel" value="Fone:">
+                      <br>
+                      <span class="error">*Este não é um número de telefone válido.</span> <span class="empty">*Este campo é obrigatório.</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="message">
+                      <textarea>Mensagem:</textarea>
+                      <br>
+                      <span class="error">*A mensagem é muito curta.</span> <span class="empty">*Escreva-nos algo.</span>
+                    </label>
+                  </div>
+                  <div class="buttons-wrapper">
+                    <a class="button" data-type="reset">Limpar</a>
+                    <a class="button" data-type="submit">Enviar</a>
+                  </div>
+                </fieldset>
+              </form>
+            </article>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </div>
+   <div class="block"> 
+      <!--==============================footer================================-->
+      <footer>
+      <div class="main aligncenter">
+        <div class="privacy">BabeleAnna   &copy; 2023 <span>|</span> <a href="politica.html" rel="nofollow">Política de Privacidade</a> <span>|</span> <strong>Desenvolvido por LB Designer</strong> </div>
+      </div>
+    </footer>
+    </div>
+
+    <div class="floating-buttons">
+      <div class="toggle-button">+</div>
+      <div class="button-container">
+              <a href="https://wa.me/5511981980219" target="_blank" class="whatsapp-button">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/babele.anna" target="_blank" class="instagram-button">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/releases/latest/js/fontawesome.min.js" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='https://kit.fontawesome.com/b9912851aa.js?ver=1.0.0' id='fontawesome-js'></script>
+</body>
+</html>
