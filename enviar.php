@@ -65,17 +65,17 @@ $estado = $_POST ["estado"];
 
 
  // email onde tu vai receber a mensagem
-    $destinatario = "lucianebatista@hotmail.com";
+    $destinatario = "babeleanna.arteearomas@gmail.com";
 
 // headers que prepara a mensagem
 $headers = "MIME-Version: 1.1 \r\n";
 $headers .= "Content-type: text/html; charset=utf-8; \r\n";
 $headers .= "From:".$email."\r\n"; //E-mail do remetente
-//$headers .= "Return-Path: lucianebatista@hotmail.com\r\n"; //E-mail - se quiser reenviar para outra email
+//$headers .= "Return-Path: babeleanna.arteearomas@gmail.com\r\n"; //E-mail - se quiser reenviar para outra email
 
 $assunto = "Candidato(a) - ".$nome." - ".$cidade."";
 
-mail($destinatario, $assunto , $msg, $headers, "-r". "lucianebatista@hotmail.com");
+mail($destinatario, $assunto , $msg, $headers, "-r". "babeleanna.arteearomas@gmail.com");
 
 
 ?> 
