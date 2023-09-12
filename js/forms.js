@@ -11,7 +11,7 @@
 					successCl:'success',
 					successShow:'4000',
 					mailHandlerURL:'bat/MailHandler.php',
-					ownerEmail:'contato@babeleanna.com.br',
+					ownerEmail:'lucianebatista@hotmail.com',
 					stripHTML:true,
 					smtpMailServer:'localhost',
 					targets:'input,textarea',
@@ -182,6 +182,6 @@
 })(jQuery)
 $(window).load(function(){ 	
 			 $('#contact-form').forms({
- 	     ownerEmail:'contato@babeleanna.com.br'
+ 	     ownerEmail:'lucianebatista@hotmail.com'
  	     })
    })
