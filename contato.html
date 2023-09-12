@@ -186,7 +186,6 @@
                 <dd><span>Email:</span>contato@babeleanna.com.br</dd>  
                 <dd><span>Telefone:</span> +55 11 98198-0219</dd>
                 <dd><span>Whatsapp:</span> +55 11 98198-0219</dd>
-   
               </dl>
             </article>
             <article class="grid_5 prefix_2">
@@ -201,28 +200,28 @@
                 <fieldset>
                   <div>
                     <label class="name">
-                      <input type="text" name="nome" placeholder="Nome:" value="<?php echo isset($_POST['nome']) ? $_POST['nome'] : ''; ?>">
+                      <input type="text" name="nome" placeholder="Nome:" <?php echo isset($_POST['nome']) ? 'value="' . $_POST['nome'] . '"' : ''; ?>
                       <br>
                       <span class="error">*Este não é um nome válido.</span> <span class="empty">*Este campo é obrigatório.</span>
                     </label>
                   </div>
                   <div>
                     <label class="email">
-                      <input type="email" name="email" placeholder="E-mail:" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>">
+                      <input type="email" name="email" placeholder="E-mail:" <?php echo isset($_POST['email']) ? 'value="' . $_POST['email'] . '"' : ''; ?>
                       <br>
                       <span class="error">*Este não é um endereço de e-mail válido.</span> <span class="empty">*Este campo é obrigatório.</span>
                     </label>
                   </div>
                   <div>
                     <label class="phone">
-                      <input type="tel" name="telefone" placeholder="Telefone:" value="<?php echo isset($_POST['telefone']) ? $_POST['telefone'] : ''; ?>">
+                      <input type="tel" name="telefone" placeholder="Telefone:" <?php echo isset($_POST['telefone']) ? 'value="' . $_POST['telefone'] . '"' : ''; ?>
                       <br>
                       <span class="error">*Este não é um número de telefone válido.</span> <span class="empty">*Este campo é obrigatório.</span>
                     </label>
                   </div>
                   <div>
                     <label class="message">
-                      <textarea name="mensagem" placeholder="Mensagem:"><?php echo isset($_POST['mensagem']) ? $_POST['mensagem'] : ''; ?></textarea>
+                      <textarea name="mensagem" placeholder="Mensagem:" <?php echo isset($_POST['mensagem']) ? $_POST['mensagem'] : ''; ?></textarea>
                       <br>
                       <span class="error">*A mensagem é muito curta.</span> <span class="empty">*Escreva-nos algo.</span>
                     </label>
