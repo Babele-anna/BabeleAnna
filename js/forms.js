@@ -130,7 +130,7 @@
 							th
 								.bind('click',function(){
 									_.form.trigger(th.data('type'))
-									return true
+									return false
 								})
 						})
 					},
