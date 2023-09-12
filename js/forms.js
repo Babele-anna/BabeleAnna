@@ -130,7 +130,7 @@
 							th
 								.bind('click',function(){
 									_.form.trigger(th.data('type'))
-									return false
+									return true
 								})
 						})
 					},
@@ -161,7 +161,7 @@
 									_.submitFu()
 								else
 									_.form[0].submit()
-								return false
+								return true
 							})
 							.bind('reset',function(){
 								_.labels.removeClass(_.invalidCl)									
