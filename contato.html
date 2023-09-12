@@ -196,28 +196,28 @@
                 <fieldset>
                   <div>
                     <label class="name">
-                      <input type="text" name="nome" placeholder="Nome:" value="<?php echo isset($_POST['nome']) ? $_POST['nome'] : ''; ?>" required>
+                      <input type="text" name="nome" placeholder="Nome:" value="" required>
                       <br>
                       <span class="error">*Este não é um nome válido.</span> <span class="empty">*Este campo é obrigatório.</span>
                     </label>
                   </div>
                   <div>
                     <label class="email">
-                      <input type="email" name="email" placeholder="E-mail:" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>" required>
+                      <input type="email" name="email" placeholder="E-mail:" value="" required>
                       <br>
                       <span class="error">*Este não é um endereço de e-mail válido.</span> <span class="empty">*Este campo é obrigatório.</span>
                     </label>
                   </div>
                   <div>
                     <label class="phone">
-                      <input type="tel" name="telefone" placeholder="Telefone:" value="<?php echo isset($_POST['telefone']) ? $_POST['telefone'] : ''; ?>" required>
+                      <input type="tel" name="telefone" placeholder="Telefone:" value="" required>
                       <br>
                       <span class="error">*Este não é um número de telefone válido.</span> <span class="empty">*Este campo é obrigatório.</span>
                     </label>
                   </div>
                   <div>
                     <label class="message">
-                      <textarea name="mensagem" placeholder="Mensagem:" required><?php echo isset($_POST['mensagem']) ? $_POST['mensagem'] : ''; ?></textarea>
+                      <textarea name="mensagem" placeholder="Mensagem:" required></textarea>
                       <br>
                       <span class="error">*A mensagem é muito curta.</span> <span class="empty">*Escreva-nos algo.</span>
                     </label>
