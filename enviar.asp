@@ -13,10 +13,10 @@ Dim emaildestino
 'Abaixo seguem algumas definicoes de variaveis para o envio de seu formulario. Por favor preencha os campos abaixo.
 
 meuservidorsmtp = "smtp.gmail.com" ' Informacoes so seu servidor SMTP
-minhacontaautenticada = "babeleanna.arteearomas@gmail.com" ' conta de e-mail utilizada para enviar
+minhacontaautenticada = "contato@babeleanna.com.br" ' conta de e-mail utilizada para enviar
 minhasenhaparaenvio = "Ew@21301608" ' senha da conta de e-mail
-emailorigem = "babeleanna.arteearomas@gmail.com" ' e-mail que indica de onde partiu a mensagem
-emaildestino = "babeleanna.arteearomas@gmail.com" ' e-mail que vai receber as mensagens do formulario
+emailorigem = "contato@babeleanna.com.br" ' e-mail que indica de onde partiu a mensagem
+emaildestino = "contato@babeleanna.com.br" ' e-mail que vai receber as mensagens do formulario
 
 'Fim da definição manual de parâmetros.
 
@@ -64,7 +64,7 @@ response.write "Sua mensagem foi enviada com sucesso."
 <title>.: BabelleAnna :.</title>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 </head>
-<a href="home.htm">Continuar navegando.</a>
+<a href="index.html">Continuar navegando.</a>
 <body bgcolor="#FFFFFF" text="#003366">
 </body>
 </html>

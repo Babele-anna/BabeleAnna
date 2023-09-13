@@ -22,7 +22,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
-        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico">
 
 </head>
 
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-9">
                     <div class="logo">
-                        <h1><a href="index.html"> <img src="img/logo/logocsb_200x200.png" alt="CSB" width="129" height="123">.: Babelle :.</b></span></a></h1>
+                        <h1><a href="enviado.html"> <img src="img/logo/logocsb_200x200.png" alt="CSB" width="129" height="123">.: Babelle :.</b></span></a></h1>
 					</div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -65,17 +65,17 @@ $estado = $_POST ["estado"];
 
 
  // email onde tu vai receber a mensagem
-    $destinatario = "babeleanna.arteearomas@gmail.com";
+    $destinatario = "contato@babeleanna.com.br";
 
 // headers que prepara a mensagem
 $headers = "MIME-Version: 1.1 \r\n";
 $headers .= "Content-type: text/html; charset=utf-8; \r\n";
 $headers .= "From:".$email."\r\n"; //E-mail do remetente
-//$headers .= "Return-Path: babeleanna.arteearomas@gmail.com\r\n"; //E-mail - se quiser reenviar para outra email
+//$headers .= "Return-Path: contato@babeleanna.com.br\r\n"; //E-mail - se quiser reenviar para outra email
 
 $assunto = "Candidato(a) - ".$nome." - ".$cidade."";
 
-mail($destinatario, $assunto , $msg, $headers, "-r". "babeleanna.arteearomas@gmail.com");
+mail($destinatario, $assunto , $msg, $headers, "-r". "contato@babeleanna.com.br");
 
 
 ?> 
