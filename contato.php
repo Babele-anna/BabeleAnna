@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $telefone = $_POST['telefone'];
   $mensagem = $_POST['mensagem'];
 
-  $to = "lucianebatista@hotmail.com"; // Substitua pelo seu endereço de e-mail
+  $to = "contato@babeleanna.com.br"; // Substitua pelo seu endereço de e-mail
   $subject = "Novo contato de $nome";
   $message = "Nome: $nome\n";
   $message .= "Email: $email\n";
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (mail($to, $subject, $message, $headers)) {
     echo '<script>alert("Obrigado por entrar em contato. Em breve responderemos.");</script>';
-    echo '<script>window.location.href = "formularioenviado.html";</script>';
+    echo '<script>window.location.href = "enviado.html";</script>';
   } else {
     echo '<script>alert("Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.");</script>';
     echo '<script>window.location.href = "contato.html";</script>';
