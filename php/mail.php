@@ -20,13 +20,13 @@ if (!empty($_POST)){
 
   //your email adress 
 
-  $emailTo ="babeleanna.arteearomas@gmail.com"; //"yourmail@yoursite.com";
+  $emailTo ="contato@babeleanna.com.br"; //"yourmail@yoursite.com";
 
 
 
   //from email adress
 
-  $emailFrom ="babeleanna.arteearomas@gmail.com"; //"contact@yoursite.com";
+  $emailFrom ="contato@babeleanna.com.br"; //"contact@yoursite.com";
 
 
 
