@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $comment = $_POST["comment"];
 
   // E-mail de destino (seu endereço de e-mail)
-  $to = "lucianebatista@hotmail.com";
+  $to = "contato@babeleanna.com.br";
 
   $subject = "Novo Comentário para Aprovação";
   $message = "Nome: $name\n";
@@ -16,6 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   mail($to, $subject, $message, "From: $email");
 
   // Redirecionar de volta para a página após enviar
-  header("Location: index.html");
+  header("Location: enviado.html");
 }
 ?>
