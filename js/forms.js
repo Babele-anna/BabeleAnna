@@ -11,7 +11,7 @@
 					successCl:'success',
 					successShow:'4000',
 					mailHandlerURL:'enviar.php',
-					ownerEmail:'contato@babeleanna.com.br',
+					ownerEmail:'contatobabeleanna@gmail.com',
 					stripHTML:true,
 					smtpMailServer:'smtp.gmail.com',
 					targets:'input,textarea',
