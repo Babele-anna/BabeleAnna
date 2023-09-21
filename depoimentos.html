@@ -1,3 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Depoimentos</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your keywords">
+  <meta name="author" content="Your name">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.1.1.js"></script>
+  <script src="js/bgstretcher.js"></script>
+  <script>
+    $(function(){
+      // Initialize Backgound Stretcher
+      $('BODY').bgStretcher({
+        images: ['images/slide-1.jpg'],
+        imageWidth: 1600,
+        imageHeight: 964,
+        resizeProportionally:true
+      });
+    });
+  </script>
+
+  <!--[if lt IE 8]>
+  <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+  <script src="js/html5shiv.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <![endif]-->
+
+<style>
+        .back-button {
+            float: right;
+        }
+    </style>
+
+
+
+  <style>
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+    }
+
+    .floating-buttons .toggle-button {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      background-color: transparent;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .floating-buttons .toggle-button.active::before {
+      content: "x";
+    }
+
+    .floating-buttons .button-container {
+      position: absolute;
+      right: 0;
+      bottom: 90px;
+      z-index: 1;
+      width: 60px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .floating-buttons .toggle-button.active ~ .button-container {
+      transform: translateY(0);
+    }
+
+    .floating-buttons .button-container a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .floating-buttons .button-container a:hover {
+      background-color: #fff;
+    }
+
+    .floating-buttons .button-container a.instagram-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.instagram-button i {
+      font-size: 20px;
+      color: white;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button {
+      background-color: #C0C0C0;
+    }
+
+    .floating-buttons .button-container a.whatsapp-button i {
+      font-size: 20px;
+      color: white;
+    }
+  
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .back-button:hover {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="extra-block"> 
+    <!--==============================row-top=================================-->
+<div class="row-top">
+      <div class="main">
+        <ul class="list-soc">
+          <li><a href="https://www.facebook.com/babele.anna" target="_blank"><img alt="facebook" src="images/soc-icon1.png"></a></li>
+          <li><a href="https://www.instagram.com/babele.anna" target="_blank"><img alt="instagram" src="images/soc-icon2.png"></a></li>
+	  <li><a href="#"><img alt="youtube" src="images/soc-icon3.png"></a></li>
+	  <li><a href="https://br.pinterest.com/BabeleAnna/" target="_blank"><img alt="pinterest" src="images/soc-icon4.png"></a></li>
+	  <li><a href="https://www.elo7.com.br/babeleanna" target="_blank"><img alt="elo7" src="images/soc-icon5.png"></a></li>
+        </ul>
+      </div>
+    </div>
+      
+    <!--==============================header=================================-->
+      
+    <header>
+      <div class="row-nav">
+        <div class="main">
+          <h1 class="logo"><a href="index.html"><img alt="BabeleAnna" src="images/logo.png"></a></h1>
+          <nav>
+             <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+              <li class="current"><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="contato.html">Contatos</a></li>
+	      <li><a href=""></a></li>
+	      <li><a href=""></a></li>
+	      <li><a href="saboaria.html">Conheça nossa Saboaria</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </header>
+  
+    <!--==============================content=================================-->
+    <section id="content">
+      <div class="main-block policy">
+        <div class="main">
+          
+
+
+
 
 <!doctype html><html lang="pt-BR"><head><script data-no-optimize="1">var litespeed_docref=sessionStorage.getItem("litespeed_docref");litespeed_docref&&(Object.defineProperty(document,"referrer",{get:function(){return litespeed_docref}}),sessionStorage.removeItem("litespeed_docref"));</script> <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="preload" as="style" href="https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/style.css" /><link rel="preload" as="script" href="https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/js/scri.js" /><link rel="preload" href="https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/plugins/fontawesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/plugins/fontawesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/plugins/fontawesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/plugins/slick/slick/fonts/slick.woff" as="font" type="font/woff" crossorigin><link rel="preconnect" href="https://www.youtube.com"><link rel="preconnect" href="https://i.ytimg.com"><link rel="preconnect" href="https://i9.ytimg.com"><link rel="preconnect" href="https://s.ytimg.com"><link rel="preconnect" href="https://player.vimeo.com"><link rel="preconnect" href="https://i.vimeocdn.com"><link rel="preconnect" href="https://f.vimeocdn.com"><link href="https://www.googletagmanager.com/ns.html?id=GTM-NB2M989" rel="preload" as="script"><link rel="dns-prefetch" href="https://www.googletagmanager.com/" ><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /><title>Depoimentos - BabeleAnna - Arte e Aromas</title><link rel="canonical" href="https://www.babeleanna.com.br" /><meta property="og:locale" content="pt_BR" /><meta property="og:type" content="article" /><meta property="og:title" content="Depoimentos - Preciso Web - Desenvolvimento e Criação de Sites" /><meta property="og:url" content="https://www.precisoweb.com.br/depoimentos/" /><meta property="og:site_name" content="www.babeleanna.com.br" /><meta property="article:modified_time" content="2019-12-15T19:45:14+00:00" /><meta property="og:image" content="images/pagina-depoimentos-precisoweb.jpg" /><meta property="og:image:width" content="1600" /><meta property="og:image:height" content="400" /><meta property="og:image:type" content="image/jpeg" /><meta name="twitter:card" content="summary_large_image" /> <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.babeleanna.com.br","url":"https://www.babeleanna.com.br","name":"Depoimentos - BabeleAnna","isPartOf":{"@id":"https://www.babeleanna.com.br"},"primaryImageOfPage":{"@id":"www.babeleanna.com.br"},"image":{"@id":"https://www.babeleanna.com.br"},"thumbnailUrl":"images/babeleanna.jpg","datePublished":"2019-12-02T00:39:59+00:00","dateModified":"2019-12-15T19:45:14+00:00","breadcrumb":{"@id":"https://www.babeleanna.com.br"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://www.precisoweb.com.br/depoimentos/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://www.precisoweb.com.br/depoimentos/#primaryimage","url":"images/pagina-depoimentos-precisoweb.jpg","contentUrl":"images/pagina-depoimentos-precisoweb.jpg","width":1600,"height":400},{"@type":"BreadcrumbList","@id":"https://www.precisoweb.com.br/depoimentos/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.precisoweb.com.br/"},{"@type":"ListItem","position":2,"name":"Depoimentos"}]},{"@type":"WebSite","@id":"https://www.precisoweb.com.br/#website","url":"https://www.precisoweb.com.br/","name":"Preciso Web - Desenvolvimento e Criação de Sites","description":"A Preciso Web trabalha com Criação de Sites com Design Responsivo e Assessoria Web com soluções criativas, a Preciso Web acompanha as tendências de mercado.","publisher":{"@id":"https://www.precisoweb.com.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.precisoweb.com.br/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"pt-BR"},{"@type":"Organization","@id":"https://www.precisoweb.com.br/#organization","name":"Preciso Web","url":"https://www.precisoweb.com.br/","logo":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://www.precisoweb.com.br/#/schema/logo/image/","url":"images/favicon.ico","contentUrl":"images/favicon.ico","width":512,"height":512,"caption":"Preciso Web"},"image":{"@id":"https://www.precisoweb.com.br/#/schema/logo/image/"}}]}</script>  <script data-optimized="1" type="text/javascript" src="data:text/javascript;base64,d2luZG93Ll93cGVtb2ppU2V0dGluZ3M9eyJiYXNlVXJsIjoiaHR0cHM6XC9cL3Mudy5vcmdcL2ltYWdlc1wvY29yZVwvZW1vamlcLzE0LjAuMFwvNzJ4NzJcLyIsImV4dCI6Ii5wbmciLCJzdmdVcmwiOiJodHRwczpcL1wvcy53Lm9yZ1wvaW1hZ2VzXC9jb3JlXC9lbW9qaVwvMTQuMC4wXC9zdmdcLyIsInN2Z0V4dCI6Ii5zdmciLCJzb3VyY2UiOnsiY29uY2F0ZW1vamkiOiJodHRwczpcL1wvd3d3LnByZWNpc293ZWIuY29tLmJyXC93cC1pbmNsdWRlc1wvanNcL3dwLWVtb2ppLXJlbGVhc2UubWluLmpzP3Zlcj02LjMuMSJ9fTsKLyohIFRoaXMgZmlsZSBpcyBhdXRvLWdlbmVyYXRlZCAqLwohZnVuY3Rpb24oaSxuKXt2YXIgbyxzLGU7ZnVuY3Rpb24gYyhlKXt0cnl7dmFyIHQ9e3N1cHBvcnRUZXN0czplLHRpbWVzdGFtcDoobmV3IERhdGUpLnZhbHVlT2YoKX07c2Vzc2lvblN0b3JhZ2Uuc2V0SXRlbShvLEpTT04uc3RyaW5naWZ5KHQpKX1jYXRjaChlKXt9fWZ1bmN0aW9uIHAoZSx0LG4pe2UuY2xlYXJSZWN0KDAsMCxlLmNhbnZhcy53aWR0aCxlLmNhbnZhcy5oZWlnaHQpLGUuZmlsbFRleHQodCwwLDApO3ZhciB0PW5ldyBVaW50MzJBcnJheShlLmdldEltYWdlRGF0YSgwLDAsZS5jYW52YXMud2lkdGgsZS5jYW52YXMuaGVpZ2h0KS5kYXRhKSxyPShlLmNsZWFyUmVjdCgwLDAsZS5jYW52YXMud2lkdGgsZS5jYW52YXMuaGVpZ2h0KSxlLmZpbGxUZXh0KG4sMCwwKSxuZXcgVWludDMyQXJyYXkoZS5nZXRJbWFnZURhdGEoMCwwLGUuY2FudmFzLndpZHRoLGUuY2FudmFzLmhlaWdodCkuZGF0YSkpO3JldHVybiB0LmV2ZXJ5KGZ1bmN0aW9uKGUsdCl7cmV0dXJuIGU9PT1yW3RdfSl9ZnVuY3Rpb24gdShlLHQsbil7c3dpdGNoKHQpe2Nhc2UiZmxhZyI6cmV0dXJuIG4oZSwiXHVkODNjXHVkZmYzXHVmZTBmXHUyMDBkXHUyNmE3XHVmZTBmIiwiXHVkODNjXHVkZmYzXHVmZTBmXHUyMDBiXHUyNmE3XHVmZTBmIik/ITE6IW4oZSwiXHVkODNjXHVkZGZhXHVkODNjXHVkZGYzIiwiXHVkODNjXHVkZGZhXHUyMDBiXHVkODNjXHVkZGYzIikmJiFuKGUsIlx1ZDgzY1x1ZGZmNFx1ZGI0MFx1ZGM2N1x1ZGI0MFx1ZGM2Mlx1ZGI0MFx1ZGM2NVx1ZGI0MFx1ZGM2ZVx1ZGI0MFx1ZGM2N1x1ZGI0MFx1ZGM3ZiIsIlx1ZDgzY1x1ZGZmNFx1MjAwYlx1ZGI0MFx1ZGM2N1x1MjAwYlx1ZGI0MFx1ZGM2Mlx1MjAwYlx1ZGI0MFx1ZGM2NVx1MjAwYlx1ZGI0MFx1ZGM2ZVx1MjAwYlx1ZGI0MFx1ZGM2N1x1MjAwYlx1ZGI0MFx1ZGM3ZiIpO2Nhc2UiZW1vamkiOnJldHVybiFuKGUsIlx1ZDgzZVx1ZGVmMVx1ZDgzY1x1ZGZmYlx1MjAwZFx1ZDgzZVx1ZGVmMlx1ZDgzY1x1ZGZmZiIsIlx1ZDgzZVx1ZGVmMVx1ZDgzY1x1ZGZmYlx1MjAwYlx1ZDgzZVx1ZGVmMlx1ZDgzY1x1ZGZmZiIpfXJldHVybiExfWZ1bmN0aW9uIGYoZSx0LG4pe3ZhciByPSJ1bmRlZmluZWQiIT10eXBlb2YgV29ya2VyR2xvYmFsU2NvcGUmJnNlbGYgaW5zdGFuY2VvZiBXb3JrZXJHbG9iYWxTY29wZT9uZXcgT2Zmc2NyZWVuQ2FudmFzKDMwMCwxNTApOmkuY3JlYXRlRWxlbWVudCgiY2FudmFzIiksYT1yLmdldENvbnRleHQoIjJkIix7d2lsbFJlYWRGcmVxdWVudGx5OiEwfSksbz0oYS50ZXh0QmFzZWxpbmU9InRvcCIsYS5mb250PSI2MDAgMzJweCBBcmlhbCIse30pO3JldHVybiBlLmZvckVhY2goZnVuY3Rpb24oZSl7b1tlXT10KGEsZSxuKX0pLG99ZnVuY3Rpb24gdChlKXt2YXIgdD1pLmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3Quc3JjPWUsdC5kZWZlcj0hMCxpLmhlYWQuYXBwZW5kQ2hpbGQodCl9InVuZGVmaW5lZCIhPXR5cGVvZiBQcm9taXNlJiYobz0id3BFbW9qaVNldHRpbmdzU3VwcG9ydHMiLHM9WyJmbGFnIiwiZW1vamkiXSxuLnN1cHBvcnRzPXtldmVyeXRoaW5nOiEwLGV2ZXJ5dGhpbmdFeGNlcHRGbGFnOiEwfSxlPW5ldyBQcm9taXNlKGZ1bmN0aW9uKGUpe2kuYWRkRXZlbnRMaXN0ZW5lcigiRE9NQ29udGVudExvYWRlZCIsZSx7b25jZTohMH0pfSksbmV3IFByb21pc2UoZnVuY3Rpb24odCl7dmFyIG49ZnVuY3Rpb24oKXt0cnl7dmFyIGU9SlNPTi5wYXJzZShzZXNzaW9uU3RvcmFnZS5nZXRJdGVtKG8pKTtpZigib2JqZWN0Ij09dHlwZW9mIGUmJiJudW1iZXIiPT10eXBlb2YgZS50aW1lc3RhbXAmJihuZXcgRGF0ZSkudmFsdWVPZigpPGUudGltZXN0YW1wKzYwNDgwMCYmIm9iamVjdCI9PXR5cGVvZiBlLnN1cHBvcnRUZXN0cylyZXR1cm4gZS5zdXBwb3J0VGVzdHN9Y2F0Y2goZSl7fXJldHVybiBudWxsfSgpO2lmKCFuKXtpZigidW5kZWZpbmVkIiE9dHlwZW9mIFdvcmtlciYmInVuZGVmaW5lZCIhPXR5cGVvZiBPZmZzY3JlZW5DYW52YXMmJiJ1bmRlZmluZWQiIT10eXBlb2YgVVJMJiZVUkwuY3JlYXRlT2JqZWN0VVJMJiYidW5kZWZpbmVkIiE9dHlwZW9mIEJsb2IpdHJ5e3ZhciBlPSJwb3N0TWVzc2FnZSgiK2YudG9TdHJpbmcoKSsiKCIrW0pTT04uc3RyaW5naWZ5KHMpLHUudG9TdHJpbmcoKSxwLnRvU3RyaW5nKCldLmpvaW4oIiwiKSsiKSk7IixyPW5ldyBCbG9iKFtlXSx7dHlwZToidGV4dC9qYXZhc2NyaXB0In0pLGE9bmV3IFdvcmtlcihVUkwuY3JlYXRlT2JqZWN0VVJMKHIpLHtuYW1lOiJ3cFRlc3RFbW9qaVN1cHBvcnRzIn0pO3JldHVybiB2b2lkKGEub25tZXNzYWdlPWZ1bmN0aW9uKGUpe2Mobj1lLmRhdGEpLGEudGVybWluYXRlKCksdChuKX0pfWNhdGNoKGUpe31jKG49ZihzLHUscCkpfXQobil9KS50aGVuKGZ1bmN0aW9uKGUpe2Zvcih2YXIgdCBpbiBlKW4uc3VwcG9ydHNbdF09ZVt0XSxuLnN1cHBvcnRzLmV2ZXJ5dGhpbmc9bi5zdXBwb3J0cy5ldmVyeXRoaW5nJiZuLnN1cHBvcnRzW3RdLCJmbGFnIiE9PXQmJihuLnN1cHBvcnRzLmV2ZXJ5dGhpbmdFeGNlcHRGbGFnPW4uc3VwcG9ydHMuZXZlcnl0aGluZ0V4Y2VwdEZsYWcmJm4uc3VwcG9ydHNbdF0pO24uc3VwcG9ydHMuZXZlcnl0aGluZ0V4Y2VwdEZsYWc9bi5zdXBwb3J0cy5ldmVyeXRoaW5nRXhjZXB0RmxhZyYmIW4uc3VwcG9ydHMuZmxhZyxuLkRPTVJlYWR5PSExLG4ucmVhZHlDYWxsYmFjaz1mdW5jdGlvbigpe24uRE9NUmVhZHk9ITB9fSkudGhlbihmdW5jdGlvbigpe3JldHVybiBlfSkudGhlbihmdW5jdGlvbigpe3ZhciBlO24uc3VwcG9ydHMuZXZlcnl0aGluZ3x8KG4ucmVhZHlDYWxsYmFjaygpLChlPW4uc291cmNlfHx7fSkuY29uY2F0ZW1vamk/dChlLmNvbmNhdGVtb2ppKTplLndwZW1vamkmJmUudHdlbW9qaSYmKHQoZS50d2Vtb2ppKSx0KGUud3BlbW9qaSkpKX0pKX0oKHdpbmRvdyxkb2N1bWVudCksd2luZG93Ll93cGVtb2ppU2V0dGluZ3Mp" defer></script> <style type="text/css">img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-shadow:none !important;height:1em !important;width:1em !important;margin:0 .07em !important;vertical-align:-.1em !important;background:0 0 !important;padding:0 !important}</style><link data-optimized="1" rel='stylesheet' id='wp-block-library-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/1a8c6077d38c79bcde59eea886128635.css?ver=df775' type='text/css' media='all' /><style id='classic-theme-styles-inline-css' type='text/css'>/*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style><style id='global-styles-inline-css' type='text/css'>body{--wp--preset--color--black:#000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#fff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,#9b51e0 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,#7adcb4 0%,#00d082 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,#cf2e2e 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,#eee 0%,#a9b8c3 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,#4aeadc 0%,#9778d1 20%,#cf2aba 40%,#ee2c82 60%,#fb6962 80%,#fef84c 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,#ffceec 0%,#9896f0 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,#fecda5 0%,#fe2d2d 50%,#6b003e 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,#ffcb70 0%,#c751c0 50%,#4158d0 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,#fff5cb 0%,#b6e3d4 50%,#33a7b5 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,#caf880 0%,#71ce7e 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,#020381 0%,#2874fc 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:.44rem;--wp--preset--spacing--30:.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0,0,0,.2);--wp--preset--shadow--deep:12px 12px 50px rgba(0,0,0,.4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0,0,0,.2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgba(255,255,255,1),6px 6px rgba(0,0,0,1);--wp--preset--shadow--crisp:6px 6px 0px rgba(0,0,0,1)}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}body .is-layout-flow>.alignleft{float:left;margin-inline-start:0;margin-inline-end:2em}body .is-layout-flow>.alignright{float:right;margin-inline-start:2em;margin-inline-end:0}body .is-layout-flow>.aligncenter{margin-left:auto !important;margin-right:auto !important}body .is-layout-constrained>.alignleft{float:left;margin-inline-start:0;margin-inline-end:2em}body .is-layout-constrained>.alignright{float:right;margin-inline-start:2em;margin-inline-end:0}body .is-layout-constrained>.aligncenter{margin-left:auto !important;margin-right:auto !important}body .is-layout-constrained>:where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:var(--wp--style--global--content-size);margin-left:auto !important;margin-right:auto !important}body .is-layout-constrained>.alignwide{max-width:var(--wp--style--global--wide-size)}body .is-layout-flex{display:flex}body .is-layout-flex{flex-wrap:wrap;align-items:center}body .is-layout-flex>*{margin:0}body .is-layout-grid{display:grid}body .is-layout-grid>*{margin:0}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}.has-black-color{color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-color{color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-color{color:var(--wp--preset--color--white) !important}.has-pale-pink-color{color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-color{color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-color{color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-color{color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-color{color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-color{color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-color{color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-color{color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-color{color:var(--wp--preset--color--vivid-purple) !important}.has-black-background-color{background-color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-background-color{background-color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-background-color{background-color:var(--wp--preset--color--white) !important}.has-pale-pink-background-color{background-color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-background-color{background-color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-background-color{background-color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-background-color{background-color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-background-color{background-color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-background-color{background-color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-background-color{background-color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-background-color{background-color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-background-color{background-color:var(--wp--preset--color--vivid-purple) !important}.has-black-border-color{border-color:var(--wp--preset--color--black) !important}.has-cyan-bluish-gray-border-color{border-color:var(--wp--preset--color--cyan-bluish-gray) !important}.has-white-border-color{border-color:var(--wp--preset--color--white) !important}.has-pale-pink-border-color{border-color:var(--wp--preset--color--pale-pink) !important}.has-vivid-red-border-color{border-color:var(--wp--preset--color--vivid-red) !important}.has-luminous-vivid-orange-border-color{border-color:var(--wp--preset--color--luminous-vivid-orange) !important}.has-luminous-vivid-amber-border-color{border-color:var(--wp--preset--color--luminous-vivid-amber) !important}.has-light-green-cyan-border-color{border-color:var(--wp--preset--color--light-green-cyan) !important}.has-vivid-green-cyan-border-color{border-color:var(--wp--preset--color--vivid-green-cyan) !important}.has-pale-cyan-blue-border-color{border-color:var(--wp--preset--color--pale-cyan-blue) !important}.has-vivid-cyan-blue-border-color{border-color:var(--wp--preset--color--vivid-cyan-blue) !important}.has-vivid-purple-border-color{border-color:var(--wp--preset--color--vivid-purple) !important}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important}.has-cool-to-warm-spectrum-gradient-background{background:var(--wp--preset--gradient--cool-to-warm-spectrum) !important}.has-blush-light-purple-gradient-background{background:var(--wp--preset--gradient--blush-light-purple) !important}.has-blush-bordeaux-gradient-background{background:var(--wp--preset--gradient--blush-bordeaux) !important}.has-luminous-dusk-gradient-background{background:var(--wp--preset--gradient--luminous-dusk) !important}.has-pale-ocean-gradient-background{background:var(--wp--preset--gradient--pale-ocean) !important}.has-electric-grass-gradient-background{background:var(--wp--preset--gradient--electric-grass) !important}.has-midnight-gradient-background{background:var(--wp--preset--gradient--midnight) !important}.has-small-font-size{font-size:var(--wp--preset--font-size--small) !important}.has-medium-font-size{font-size:var(--wp--preset--font-size--medium) !important}.has-large-font-size{font-size:var(--wp--preset--font-size--large) !important}.has-x-large-font-size{font-size:var(--wp--preset--font-size--x-large) !important}.wp-block-navigation a:where(:not(.wp-element-button)){color:inherit}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}.wp-block-pullquote{font-size:1.5em;line-height:1.6}</style><link data-optimized="1" rel='stylesheet' id='bootstrap-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/f842c642d995d8996fbdcb5228309b39.css?ver=cf128' type='text/css' media='all' /><link data-optimized="1" rel='stylesheet' id='animate-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/ad4c1d494a865eaf7674f9864dfc3771.css?ver=69d8d' type='text/css' media='all' /><link data-optimized="1" rel='stylesheet' id='fontawesome-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/cce20233ef250811943c892f3ebdbcd9.css?ver=f04dd' type='text/css' media='all' /><link data-optimized="1" rel='stylesheet' id='slick-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/3859867f3656929618de42eb6a28e3e2.css?ver=89fe7' type='text/css' media='all' /><link data-optimized="1" rel='stylesheet' id='slick-theme-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/4046483491cf1328e50ca18213b0f2c3.css?ver=635d8' type='text/css' media='all' /><link data-optimized="1" rel='stylesheet' id='fancybox-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/32150f2d22e1a600d1a4706d1a398bc5.css?ver=7ba50' type='text/css' media='all' /><link data-optimized="1" rel='stylesheet' id='style-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/6adf26715f669095cb4aebba96abc335.css?ver=b9865' type='text/css' media='all' /><link data-optimized="1" rel='stylesheet' id='malinky-ajax-pagination-css' href='https://www.precisoweb.com.br/wp-content/litespeed/css/fa659efac95402eb6cc2759ec03f90ab.css?ver=f90ab' type='text/css' media='all' /> <script type='text/javascript' src='https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/plugins/jquery.min.js?ver=3.3.1' id='jquery-js'></script> <script data-optimized="1" type='text/javascript' id='ajax_comment-js-extra' src="data:text/javascript;base64,dmFyIG1pc2hhX2FqYXhfY29tbWVudF9wYXJhbXM9eyJhamF4dXJsIjoiaHR0cHM6XC9cL3d3dy5wcmVjaXNvd2ViLmNvbS5iclwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIn0=" defer></script> <script data-optimized="1" type='text/javascript' src='https://www.precisoweb.com.br/wp-content/litespeed/js/541f2af1dc21444e07b81ecede6c48fb.js?ver=c3fb6' id='ajax_comment-js' defer data-deferred="1"></script> <link rel="icon" href="images/favicon.ico" sizes="32x32" /><link rel="icon" href="images/favicon.ico" sizes="192x192" /><link rel="apple-touch-icon" href="images/favicon.ico" /><meta name="msapplication-TileImage" content="images/favicon.ico" /> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -9,15 +206,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe><noscript><
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></noscript><div id="mySidenav" class="d-xl-none sidenav"><div class="looo">
 <img class="anima animated" data-animation="zoomInDown" data-animation-delay="1s" src="images/BabeleAnna.png" alt="BabeleAnna" /><ul class="redes anima animated" data-animation="fadeInDown" data-animation-delay="1.5s"><li></li></ul></div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><div class="menu-menu-mobile-container"><ul id="menu-menu-mobile" class="navbar-nav"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-31 nav-item"><a class="nav-link" title="Home" href="index.html">Home</a></li><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30 nav-item"></li></ul></div></div><div id="CriacaoSites" class="sticky"><nav class="navbar-expand-xl"><div class="container"><div class="row justify-content-center">
 <img class="header_bg anima animated" data-animation="slideInDown" data-animation-delay="0.1s" src="http://www.babeleanna.com.br" alt=""><div class="zinleft col-12 col-xl-4 d-none d-xl-block anima animated" data-animation="slideInDown" data-animation-delay="0.7s"><ul id="menu-menu-left" class="navbar-nav justify-content-end"><li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19 nav-item"></li></ul></div><div class="col-12 col-lg-5 col-xl-4 text-center">
-<img class="header_bg_logo anima animated" data-animation="slideInDown" data-animation-delay="0.5s" src="images/background-logo.png" alt=""><div class="navposition">
+<img class="header_bg_logo anima animated" data-animation="slideInDown" data-animation-delay="0.5s" src="images/background-logo.png" alt=""><div class="navposition"><div id="menuDinamic" class="d-block d-xl-none anima animated" data-animation="fadeIn" data-animation-delay="2.3s" onclick="openNav()"><span>MENU</span> <i class="fas fa-bars"></i></div>
+
 
 <a class="navbar-brand" href="https://www.babeleanna.com.br" title="BabeleAnna">
-<img class="anima animated" data-animation="zoomInDown" data-animation-delay="1s" src="images/BabeleAnna.png" alt="Preciso Web &#8211; Desenvolvimento e Criação de Sites" />
+<img class="anima animated" data-animation="zoomInDown" data-animation-delay="1s" src="images/BabeleAnna.png"/>
 </a></div></div>
 
 <div class="zinright col-12 col-xl-4 d-none d-xl-block anima animated" data-animation="slideInDown" data-animation-delay="0.7s"><ul id="menu-menu-right" class="navbar-nav"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13 current_page_item menu-item-20 nav-item active"></li></ul></div></div></div></nav></div><header id="headInternas">
-<img width="1600" height="400" src="images/pagina-depoimentos-precisoweb.jpg" class="img-fluid wp-post-image" alt="" decoding="async" fetchpriority="high" /><div class="transformY"><div class="container"><div class="row"><div class="col-12 title"><h1 class="anima" data-animation="fadeInUp" data-animation-delay="0.1s">DEPOIMENTOS</h1><p class="anima" data-animation="fadeInUp" data-animation-delay="0.1s">O QUE NOSSOS CLIENTES FALAM</p></div></div></div></div><div class="imgseto"><img src="https://www.precisoweb.com.br/wp-content/themes/pw-precisoweb/imgs/header-bg-bottom.svg" alt="header-bg-bottom"></div></header><section class="depoimentos agradecimentos"><div class="container"><div class="row"><div class="col-12 title anima" data-animation="fadeInUp" data-animation-delay="0.1s"><h1>Agradecimentos</h1></div></div><div class="todosdeps anima" data-animation="fadeInUp" data-animation-delay="0.1s"><div class="row"><div class="mytestimonial"><div class="col-12 offset-0 col-lg-8 offset-lg-2"><blockquote>
-Quando se faz o que se ama, tudo fica leve e é prazeroso. Nós da BabeleAnna amamos o que fazemos. Amamos fazer parte da vida e dos negócios de nossos clientes. Somos gratos a todos os clientes e parceiros com quem trabalhamos, amigos que mantém essa parceria e confiança em cada novo  projeto desenvolvido. É nossa satisfação ver sua emoção representada por nós!<h5>Anna Paula Ferreira de Oliveira</h5><h6>Fundadora da BabeleAnna</h6></blockquote></div></div></div></div></div></section>
+<img width="1600" height="400" src="images/pagina-depoimentos-precisoweb.jpg" class="img-fluid wp-post-image" alt="" decoding="async" fetchpriority="high" /><div class="transformY"><div class="container"><div class="row"><div class="col-12 title"><h1 class="anima" data-animation="fadeInUp" data-animation-delay="0.1s">DEPOIMENTOS</h1><p class="anima" data-animation="fadeInUp" data-animation-delay="0.1s">O QUE NOSSOS CLIENTES FALAM</p></div></div></div></div><div class="imgseto"><img src="" alt="header-bg-bottom"></div></header><section class="depoimentos agradecimentos"><div class="container"><div class="row"><div class="col-12 title anima" data-animation="fadeInUp" data-animation-delay="0.1s"><h2><font color="gray">Agradecimentos</font></h2></div></div><div class="todosdeps anima" data-animation="fadeInUp" data-animation-delay="0.1s"><div class="row"><div class="mytestimonial"><div class="col-12 offset-0 col-lg-8 offset-lg-2"><blockquote><h6>
+Quando se faz o que se ama, tudo fica leve e é prazeroso. Nós da BabeleAnna amamos o que fazemos. Amamos fazer parte da vida e dos negócios de nossos clientes. Somos gratos a todos os clientes e parceiros com quem trabalhamos, amigos que mantém essa parceria e confiança em cada novo  projeto desenvolvido. É nossa satisfação ver sua emoção representada por nós!</h6><h6>Anna Paula Ferreira de Oliveira</h6><h6>Fundadora da BabeleAnna</h6></blockquote></div></div></div></div></div></section>
 
 
 <section class="depoimentos"><div class="container">
@@ -27,11 +225,13 @@ Quando se faz o que se ama, tudo fica leve e é prazeroso. Nós da BabeleAnna am
 <div class="col-12 col-sm-6 col-lg-4 anima" data-animation="fadeInUp" data-animation-delay="0.1s">
 <div class="item"><div class="logo">
 <a href=""><img width="1000" height="1000" src="images/depoimento/pessoa01.png" class="attachment-large size-large" alt="" decoding="async" srcset="images/depoimento/pessoa01.png", sizes="(max-width: 1000px) 100vw, 1000px" /></a></div><div class="dep"><div class="leiamais">
-O Ateliê da Decoração, tem na Preciso Web um dos principais colaboradores, na criação e personalização da identidade visual, dos seus clientes. Apreciamos a maneira diferenciada com a qual a empresa constrói sua ideias, sempre levando em conta o estilo apresentado pelo solicitante do serviço. Esperamos continuar contando com essa parceria no ano que se inicia.Parabéns à empresa pelo excelente profissionalismo.</div><div class="name">Laís Soares</div></div></div></div>
+  <font color="gray"> 
+  O Ateliê da Decoração, tem na Preciso Web um dos principais colaboradores, na criação e personalização da identidade visual, dos seus clientes. Apreciamos a maneira diferenciada com a qual a empresa constrói sua ideias, sempre levando em conta o estilo apresentado pelo solicitante do serviço. Esperamos continuar contando com essa parceria no ano que se inicia.Parabéns à empresa pelo excelente profissionalismo.</div><div class="name">Laís Soares</div></div></div></div></font>
 
 <div class="col-12 col-sm-6 col-lg-4 anima" data-animation="fadeInUp" data-animation-delay="0.1s"><div class="item"><div class="logo"><div class="letsp">
 L</div></div><div class="dep"><div class="leiamais">
-Excelente atendimento. Serviço com qualidade comprovada. Falo por experiência própria, os cartões de visitas que neste lugar fiz não só renderam frutos agradáveis em retorno financeiros, como contaram com o que há de mais atual no que tange a design, cores, comunicação visual... Recomendo :)</div><div class="name">Lucas Geraldo</div></div></div></div>
+  <font color="gray"> 
+Excelente atendimento. Serviço com qualidade comprovada. Falo por experiência própria, os cartões de visitas que neste lugar fiz não só renderam frutos agradáveis em retorno financeiros, como contaram com o que há de mais atual no que tange a design, cores, comunicação visual... Recomendo :)</div><div class="name">Lucas Geraldo</div></div></div></div></font>
 
 
 
@@ -39,38 +239,76 @@ Excelente atendimento. Serviço com qualidade comprovada. Falo por experiência 
 <div class="col-12 col-sm-6 col-lg-4 anima" data-animation="fadeInUp" data-animation-delay="0.1s">
 <div class="item"><div class="logo">
 <a href=""><img width="1000" height="1000" src="images/depoimento/pessoa02.png" class="attachment-large size-large" alt="" decoding="async" srcset="images/depoimento/pessoa02.png", sizes="(max-width: 1000px) 100vw, 1000px" /></a></div><div class="dep"><div class="leiamais">
-Durante quase 6 anos, procurei várias empresas que pudessem desenvolver meu site, com uma página prática, confiável, objetiva e principalmente com o designer que eu sempre desejei. Foi quando fui indicado a conhecer o webdesigner Devanir Reolon da empresa "PRECISO WEB". Que grata e recompensável surpresa eu tive. Foi apresentado o layouts e parece que era eu mesmo que havia desenvolvido.</div><div class="name">Carlos Cherutti</div></div></div></div>
+  <font color="gray">
+Durante quase 6 anos, procurei várias empresas que pudessem desenvolver meu site, com uma página prática, confiável, objetiva e principalmente com o designer que eu sempre desejei. Foi quando fui indicado a conhecer o webdesigner Devanir Reolon da empresa "PRECISO WEB". Que grata e recompensável surpresa eu tive. Foi apresentado o layouts e parece que era eu mesmo que havia desenvolvido.</div><div class="name">Carlos Cherutti</div></div></div></div></font>
 
 
 <div class="col-12 col-sm-6 col-lg-4 anima" data-animation="fadeInUp" data-animation-delay="0.1s"><div class="item"><div class="logo"><div class="letsp">
 M</div></div><div class="dep"><div class="leiamais">
-Fiz a identidade visual da formatura dos meus alunos, convite e camisetas. Tudo com um preço justo, ótimo atendimento e produto impecável.</div><div class="name">Maria Cecilia Bittencourt</div></div></div></div>
+  <font color="gray">
+Fiz a identidade visual da formatura dos meus alunos, convite e camisetas. Tudo com um preço justo, ótimo atendimento e produto impecável.</div><div class="name">Maria Cecilia Bittencourt</div></div></div></div></font>
 
 
 <div class="col-12 col-sm-6 col-lg-4 anima" data-animation="fadeInUp" data-animation-delay="0.1s">
 <div class="item"><div class="logo">
 <a href=""><img width="1000" height="1000" src="images/depoimento/pessoa03.png" class="attachment-large size-large" alt="" decoding="async" srcset="images/depoimento/pessoa03.png", sizes="(max-width: 1000px) 100vw, 1000px" /></a></div><div class="dep"><div class="leiamais">
-Durante quase 6 anos, procurei várias empresas que pudessem desenvolver meu site, com uma página prática, confiável, objetiva e principalmente com o designer que eu sempre desejei. Foi quando fui indicado a conhecer o webdesigner Devanir Reolon da empresa "PRECISO WEB". Que grata e recompensável surpresa eu tive. Foi apresentado o layouts e parece que era eu mesmo que havia desenvolvido.</div><div class="name">Carlos Cherutti</div></div></div></div>
+  <font color="gray">
+Durante quase 6 anos, procurei várias empresas que pudessem desenvolver meu site, com uma página prática, confiável, objetiva e principalmente com o designer que eu sempre desejei. Foi quando fui indicado a conhecer o webdesigner Devanir Reolon da empresa "PRECISO WEB". Que grata e recompensável surpresa eu tive. Foi apresentado o layouts e parece que era eu mesmo que havia desenvolvido.</div><div class="name">Carlos Cherutti</div></div></div></div></font>
 
 
 
 <div class="col-12 col-sm-6 col-lg-4 anima" data-animation="fadeInUp" data-animation-delay="0.1s"><div class="item"><div class="logo"><div class="letsp">
 J</div></div><div class="dep"><div class="leiamais">
-Fiz a identidade visual da formatura dos meus alunos, convite e camisetas. Tudo com um preço justo, ótimo atendimento e produto impecável.</div><div class="name">Josias Góis Soares</div></div></div></div>
+  <font color="gray">
+Fiz a identidade visual da formatura dos meus alunos, convite e camisetas. Tudo com um preço justo, ótimo atendimento e produto impecável.</div><div class="name">Josias Góis Soares</div></div></div></div></font>
 
 
 <div class="row anima" data-animation="fadeInUp" data-animation-delay="0.1s"><div class="col-12"><div class="btt">
 
 
-<a href="depoimentos2.html" class="back-button">Deixe o seu depoimento</a>    
+</div>  
+        </div>
+      </div>  
+    </section>
+  
+    <a href="depoimentos2.html" class="back-button">Deixe o seu depoimento</a>    
 
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-<a href="index.html" class="back-button">Voltar à Página Principal</a>
+    &nbsp
+    &nbsp
+    &nbsp
+    &nbsp
+    &nbsp
+    &nbsp
+    
+    
+    
+    <a href="index.html" class="button">Voltar à Página Principal</a>
 
 
-</body></html>
+
+    <div class="block"> 
+      <!--==============================footer================================-->
+      <footer>
+      <div class="main aligncenter">
+        <div class="privacy">BabeleAnna   &copy; 2023 <span>|</span> <a href="politica.html" rel="nofollow">Política de Privacidade</a> <span>|</span> <strong>Desenvolvido por LB Designer</strong> </div>
+      </div>
+    </footer>
+    </div>
+
+    <div class="floating-buttons">
+      <div class="toggle-button">+</div>
+      <div class="button-container">
+      <a href="https://wa.me/5511981980219" target="_blank" class="whatsapp-button">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/babele.anna" target="_blank" class="instagram-button">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/releases/latest/js/fontawesome.min.js" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='https://kit.fontawesome.com/b9912851aa.js?ver=1.0.0' id='fontawesome-js'></script>
+</body>
+</html>
